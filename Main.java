@@ -26,5 +26,25 @@ public class Main {
 		System.out.println("REVISED HISTORICAL EVENT EXAMPLE:");
 		System.out.println("====================================================");
 		tulsaMassacre.teach();
+
+		String BreifSummaryColumbas = "Christopher Columbas set sail west towards Asia in 1492. He defied Spanish officials in his journy to the west to find faster travel to Asia because although he was certain the world was round, and the trip would be faster, the officials were not. In doing so Columbas landed in the americas.";
+		Date ColumbasDate = new Date(8, 3, 1492);
+
+		System.out.println("\n\n");
+
+		HistoricalEvent ColumbasSailsTowardsAsia = new HistoricalEvent(BreifSummaryColumbas, ColumbasDate);
+		System.out.println("====================================================");
+		System.out.println("HISTORICAL EVENT EXAMPLE:");
+		System.out.println("====================================================");
+		System.out.println(ColumbasSailsTowardsAsia);
+
+		String ColumbasRevised = "It is almost certain that in 1490, almost no-one belived the earth was flat, especialy edjucated people such as columbas and local officials and government. The reason Columbas actualy ran into trouble funding his unconventual journy to Asia was because he incorrectly believed the circumference of Earth was extreamly small. And after years of negotiation he eventualy convinced Ferdinand II of Spain and his wife to fund his new possible trade route. His foolish expediton would then land him in america.";
+		String ColumbasCite = "https://www.history.com/articles/christopher-columbus-never-set-out-to-prove-the-earth-was-round";
+		RevisedHistoricalEvent ColumbasFoolishness = new RevisedHistoricalEvent(BreifSummaryColumbas, ColumbasDate,
+				ColumbasRevised, ColumbasCite);
+		System.out.println("\n====================================================");
+		System.out.println("REVISED HISTORICAL EVENT EXAMPLE:");
+		System.out.println("====================================================");
+		ColumbasFoolishness.teach();
 	}
 }
